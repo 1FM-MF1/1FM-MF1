@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<?logo>
+<svg height="130" width="500">
+<defs>
+<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%"
+style="stop-color:rgb(100,255,196);stop-opacity:1" />
+<stop offset="100%"
+style="stop-color:rgb(100,190,90);stop-opacity:1" />
+</linearGradient>
+</defs>
+<ellipse cx="180" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+<text fill="#ffffff" font-size="45" font-family="Verdana"
+x="150" y="86">FM</text>
+</svg>
+</?logo>
+
+<h2 style="font-size:45;">FM Date&Time:</h2>
+<div id="current_date"></p>
+
+<script>
+date = new Date();
+year = date.getFullYear();
+month = date.getMonth() + 1;
+day = date.getDate();
+document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
+</script>
+
+<body onload="startTime()">
+<div id="txt"></div>
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+
+<h2>FM Calender:</h2>
+<p id="demo"></p>
+
+<script>
+let day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("demo").innerHTML = "Today is " + day;
+</script>
+
+<style>
+  body {
+  padding: 25px;
+  background-color:snow;
+  color: black ;
+  font-size: 25px;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.Dark-plac{
+  position:absolute;
+  top:80px;
+  right:6px;
+background-color:black;
+  border:none;
+  color: red;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<div class="Dark-plac">
+<body>
+<button  onclick="myFunction()">Dark mode</button> 
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+</div>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: green;
+  color: black;
+}
+
+.topnav a.active {
+background-color: #04AA6D;
+  color: white;
+}
+mark1{
+  background-color:Dodgerblue;
+}
+.p1{font-size:5px;
+}
+body{ background-color:solid white;
+}
+p.round3 {
+  border: 8px  solid Aquamarine;
+  border-radius: 22px;
+  padding: 8px;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="#about">about</a>
+  <a href="#contact">Contact</a>
+  <a href="#Coptic-Language">Coptic Language</a>
+  <a href="#News">News</a>
+  <a href="#MICROCONTROLLERS">MICROCONTROLLERS</a>
+  <a href="#Tinkercad">Tinkercad</a>
+  <a href="#M-block">M-block</a>
+  <a href="#GOOGLE-AUTO-DRAW">GOOGLE-AUTO-DRAW</a>
+  <a href="#GOOOOGLE-HACKES">GOOOOGLE-HACKES</a>
+  <a href="#IMP.WEB">IMP.WEB</a>
+  <a href="#Zodiac sign">Zodiac sign</a>
+  <a href="http://tiktok.com/@fmmf149">OUR TIKTOK ACCOUNT</a>
+</div>
+
+
+
+<body>
+​<table style="width:100%">
+  <colgroup>
+  <col span="4" style="background-color: #D6EEEE">
+</colgroup>
+  <tr>
+    <th style="font-size:300%;"> Version</th>
+    <th style="font-size:300%;">Release date</th>
+    <th style="font-size:300%;">Notes</th>
+    <th style="font-size:300%;">Latest patch release</th>
+  </tr>
+  <tr>
+<td style="font-size:300%;"> 1.0 </td>
+<td style="font-size:300%;">December 2014  </td>
+<td style="font-size:300%;"> First stable release </td>
+<td style="font-size:300%;">  1.0</td>
+
+</tr>\
+
+<td style="font-size:300%;"> 1.1 </td>
+<td style="font-size:300%;"> May 2015 </td>
+<td style="font-size:300%;"> Added improved auto-completion in the code editor, a visual shader editor, a rewritten 2D engine, and new 2D navigation polygon support. </td>
+<td style="font-size:300%;"> 1.1 </td>
+</tr>
+
+<td style="font-size:300%;"> 2.0 </td>
+<td style="font-size:300%;"> February 2016 </td>
+<td style="font-size:300%;">  </td>
+<td style="font-size:300%;">  </td>
+</tr>
+
+<td style="font-size:300%;"> 2.1 </td>
+<td style="font-size:300%;"> Updated UI and added an enhanced debugger. </td>
+<td style="font-size:300%;"> 2.0.4.1 </td>
+<td style="font-size:300%;">  </td>
+</tr>
+
+<td style="font-size:300%;"> 3.0 </td>
+<td style="font-size:300%;"> January 2018 </td>
+<td style="font-size:300%;">  Added a brand new PBR renderer and Mono (C#) support. Added Bullet as the default physics engine.</td>
+<td style="font-size:300%;">  </td>
+<tr>
+
+<td style="font-size:300%;">  3.1</td>
+<td style="font-size:300%;"> March 2019 </td>
+<td style="font-size:300%;">  Added statically typed GDScript, a script class system for GDScript, and an OpenGL ES 2.0 renderer.</td>
+<td style="font-size:300%;"> 3.1.2 </td>
+</tr>
+
+<td style="font-size:300%;"> 3.2 </td>
+<td style="font-size:300%;"> January 2020 </td>
+<td style="font-size:300%;">  Added support for glTF 2.0 files, OpenGL ES 2.0 batching, C# support for iOS, and massive documentation improvements.</td>
+<td style="font-size:300%;"> 3.2.3 </td>
+</tr>
+
+<td style="font-size:300%;"> 3.3 </td>
+<td style="font-size:300%;"> April 2021 </td>
+<td style="font-size:300%;">  Added ARM support on macOS, Android AAB support, MP3 support, FBX support, WebXR support, and a web editor.</td>
+<td style="font-size:300%;">  3.3.4</td>
+</tr>
+
+<td style="font-size:300%;"> 3.4 </td>
+<td style="font-size:300%;"> November 2021 </td>
+<td style="font-size:300%;"> Added a new theme editor, ACES Fitted tonemapper, PWA support, physical input support, and glTF 2.0 export support. </td>
+<td style="font-size:300%;">3.4.4  </td>
+</tr>
+
+<td style="font-size:300%;"> 3.5 </td>
+<td style="font-size:300%;">  Early 2022</td>
+<td style="font-size:300%;"> The next minor release for Godot 3.x, planned for 2022. Added editor support on Android, asynchronous shader compilation, and improved the navigation system. </td>
+<td style="font-size:300%;"> 3.5 Beta 3 </td>v
+</tr>
+
+<td style="font-size:300%;"> 4.0 </td>
+<td style="font-size:300%;">	Late 2022  </td>
+<td style="font-size:300%;"> Adds support for the Vulkan graphics API and the latest build of Mono. Introduces SDF-based global illumination, along with several editor changes and performance optimizations.</td>
+<td style="font-size:300%;">4.0 Alpha 5  </td>
+</tr>
+
+</tr>
+</table>
+</body
+
+
+
+
+
+
+
+
+
+
+
+<h id="IMP.WEB">IMP.WEB:</h>
+<iframe src="https://core.ac.uk/"></iframe>
+
+<h id="MICROCONTROLLERS">MICROCONTROLLERS:</h>
+<p>This is the Arduino logo:</p>
+<img src="data:image/png;base64,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"><img src="data:image/jpeg;base64,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">
+</pre>
+<ul><li><p>
+Arduino  The name of<mark1>(/ɑːrˈdwiːnoʊ/)</mark1> comes from bar in Ivrea,Italy where some of the founders of the project udesd to meet.The bar was named after Arduino of Ivrea,Who was the margrave of the March of Ivrea & King of Italy from(1002 to 1014). ARDUINO is an open-source hardware and software company, project, and user 
+community that designs and manufactures single-board microcontrollers and microcontroller kits for building
+digital devices. Its hardware products are licensed under a CC BY-SA license, while software is licensed under 
+the GNU Lesser General Public License (LGPL) or the GNU General Public License (GPL),permitting the manufacture
+of Arduino boards and software distribution by anyone. Arduino boards are available commercially from the 
+official website or through authorized distributors.
+Arduino board designs use a variety of microprocessors and controllers. The boards are equipped with sets of
+digital and analog input/output (I/O) pins that may be interfaced to various expansion boards ('shields') 
+or breadboards (for prototyping) and other circuits. The boards feature serial communication 
+interfaces,including Universal Serial Bus (USB) on some models, which are also used for loading programs.
+The microcontrollers can be programmed using the C and C++ programming languages, using a standard 
+API which is also known as the Arduino language, inspired by the Processing language and used with
+a modified version of the Processing IDE. In addition to using traditional compiler toolchains, 
+the Arduino project provides an integrated development environment (IDE) and a command line tool developed in Go.
+The Arduino project began in 2005 as a tool for students at the Interaction Design Institute Ivrea,
+Italy, aiming to provide a low-cost and easy way for novices and professionals to create devices that interact with their environment using sensors and actuators. Common examples of such devices intended for beginner hobbyists include simple robots, thermostats and motion detectors.
+The name Arduino comes from a bar in Ivrea, Italy, where some of the founders of the project used to meet. The bar was named after Arduin of Ivrea, who was the margrave of the March of Ivrea and King of Italy from 1002 to 1014.
+</p></li>
+<li><p>History:<br>Founding:
+The first Arduino ever made
+The Arduino project was started at the Interaction Design Institute Ivrea (IDII) in Ivrea, Italy. At that time, the students used a BASIC Stamp microcontroller at a cost of $50. In 2003 Hernando Barragán created the development platform Wiring as a Master's thesis project at IDII, under the supervision of Massimo Banzi and Casey Reas. Casey Reas is known for co-creating, with Ben Fry, the Processing development platform. The project goal was to create simple, low cost tools for creating digital projects by non-engineers. The Wiring platform consisted of a printed circuit board (PCB) with an ATmega128 microcontroller, an IDE based on Processing and library functions to easily program the microcontroller. In 2005, Massimo Banzi, with David Mellis, another IDII student, and David Cuartielles, extended Wiring by adding support for the cheaper ATmega8 microcontroller. The new project, forked from Wiring, was called Arduino.
+The initial Arduino core team consisted of Massimo Banzi, David Cuartielles, Tom Igoe, Gianluca Martino, and David Mellis.
+Following the completion of the platform, lighter and less expensive versions were distributed in the open-source community. It was estimated in mid-2011 that over 300,000 official Arduinos had been commercially produced,and in 2013 that 700,000 official boards were in users' hands.
+</li>
+<li>Trademark dispute:<br>
+In early 2008, the five co-founders of the Arduino project created a company, Arduino LLC, to hold the trademarks associated with Arduino. The manufacture and sale of the boards was to be done by external companies, and Arduino LLC would get a royalty from them. The founding bylaws of Arduino LLC specified that each of the five founders transfer ownership of the Arduino brand to the newly formed company.[citation needed]
+At the end of 2008, Gianluca Martino's company, Smart Projects, registered the Arduino trademark in Italy and kept this a secret from the other co-founders for about two years. This was revealed when the Arduino company tried to register the trademark in other areas of the world (they originally registered only in the US), and discovered that it was already registered in Italy. Negotiations with Martino and his firm to bring the trademark under control of the original Arduino company failed. In 2014, Smart Projects began refusing to pay royalties. They then appointed a new CEO, Federico Musto, who renamed the company Arduino SRL and created the website arduino.org, copying the graphics and layout of the original arduino.cc. This resulted in a rift in the Arduino development team.
+In January 2015, Arduino LLC filed a lawsuit against Arduino SRL.
+In May 2015, Arduino LLC created the worldwide trademark Genuino, used as brand name outside the United States.
+At the World Maker Faire in New York on 1 October 2016, Arduino LLC co-founder and CEO Massimo Banzi and Arduino SRL CEO Federico Musto announced the merger of the two companies. Around that same time, Massimo Banzi announced that in addition to the company a new Arduino Foundation would be launched as "a new beginning for Arduino", but this decision was withdrawn later.
+In April 2017, Wired reported that Musto had "fabricated his academic record... On his company's website, personal LinkedIn accounts, and even on Italian business documents, Musto was, until recently, listed as holding a PhD from the Massachusetts Institute of Technology. In some cases, his biography also claimed an MBA from New York University." Wired reported that neither university had any record of Musto's attendance, and Musto later admitted in an interview with Wired that he had never earned those degrees.[16] The controversy surrounding Musto continued when, in July 2017, he reportedly pulled many open source licenses, schematics, and code from the Arduino website, prompting scrutiny and outcry.
+By 2017 Arduino AG owned many Arduino trademarks. In July 2017 BCMI, founded by Massimo Banzi, David Cuartielles, David Mellis and Tom Igoe, acquired Arduino AG and all the Arduino trademarks. Fabio Violante is the new CEO replacing Federico Musto, who no longer works for Arduino AG.
+Post-dispute
+In October 2017, Arduino announced its partnership with ARM Holdings (ARM). The announcement said, in part, "ARM recognized independence as a core value of Arduino ... without any lock-in with the ARM architecture". Arduino intends to continue to work with all technology vendors and architectures.
+Under Violante's guidance, the company started growing again and releasing new designs. The Genuino trademark was dismissed and all products were branded again with the Arduino name. As of February 2020, the Arduino community included about 30 million active users based on the IDE downloads.
+In August 2018, Arduino announced its new open source command line tool (arduino-cli), which can be used as a replacement of the IDE to program the boards from a shell.
+In February 2019, Arduino announced its IoT Cloud service as an extension of the Create online environment.
+</br>
+<li>Hardware<br>
+Arduino-compatible R3 Uno board made in China with no Arduino logo, but with identical markings, including "Made in Italy" text
+Arduino is open-source hardware. The hardware reference designs are distributed under a Creative Commons Attribution Share-Alike 2.5 license and are available on the Arduino website. Layout and production files[24] for some versions of the hardware are also available.
+Although the hardware and software designs are freely available under copyleft licenses, the developers have requested the name Arduino to be exclusive to the official product and not be used for derived works without permission. The official policy document on use of the Arduino name emphasizes that the project is open to incorporating work by others into the official product.[25] Several Arduino-compatible products commercially released have avoided the project name by using various names ending in -duino.
+An early Arduino board[27] with an RS-232 serial interface (upper left) and an Atmel ATmega8 microcontroller chip (black, lower right); the 14 digital I/O pins are at the top, the 6 analog input pins at the lower right, and the power connector at the lower left.
+Most Arduino boards consist of an Atmel 8-bit AVR microcontroller (ATmega8,[28] ATmega168, ATmega328, ATmega1280, or ATmega2560) with varying amounts of flash memory, pins, and features. The 32-bit Arduino Due, based on the Atmel SAM3X8E was introduced in 2012. The boards use single or double-row pins or female headers that facilitate connections for programming and incorporation into other circuits. These may connect with add-on modules termed shields. Multiple and possibly stacked shields may be individually addressable via an I²C serial bus. Most boards include a 5 V linear regulator and a 16 MHz crystal oscillator or ceramic resonator. Some designs, such as the LilyPad,[31] run at 8 MHz and dispense with the onboard voltage regulator due to specific form-factor restrictions.
+Arduino microcontrollers are pre-programmed with a boot loader that simplifies uploading of programs to the on-chip flash memory. The default bootloader of the Arduino Uno is the Optiboot bootloader. Boards are loaded with program code via a serial connection to another computer. Some serial Arduino boards contain a level shifter circuit to convert between RS-232 logic levels and transistor–transistor logic (TTL) level signals. Current Arduino boards are programmed via Universal Serial Bus (USB), implemented using USB-to-serial adapter chips such as the FTDI FT232. Some boards, such as later-model Uno boards, substitute the FTDI chip with a separate AVR chip containing USB-to-serial firmware, which is reprogrammable via its own ICSP header. Other variants, such as the Arduino Mini and the unofficial Boarduino, use a detachable USB-to-serial adapter board or cable, Bluetooth or other methods. When used with traditional microcontroller tools, instead of the Arduino IDE, standard AVR in-system programming (ISP) programming is used.
+An official Arduino Uno R2 with descriptions of the I/O locations
+The Arduino board exposes most of the microcontroller's I/O pins for use by other circuits. The Diecimila,[a] Duemilanove,[b] and current Uno[c] provide 14 digital I/O pins, six of which can produce pulse-width modulated signals, and six analog inputs, which can also be used as six digital I/O pins. These pins are on the top of the board, via female 0.1-inch (2.54 mm) headers. Several plug-in application shields are also commercially available. The Arduino Nano, and Arduino-compatible Bare Bones Board[33] and Boarduino[34] boards may provide male header pins on the underside of the board that can plug into solderless breadboards.
+Many Arduino-compatible and Arduino-derived boards exist. Some are functionally equivalent to an Arduino and can be used interchangeably. Many enhance the basic Arduino by adding output drivers, often for use in school-level education,to simplify making buggies and small robots. Others are electrically equivalent, but change the form factor, sometimes retaining compatibility with shields, sometimes not. Some variants use different processors, of varying compatibility.
+</br>
+<li>
+Official boards<br>
+Further information: List of Arduino boards and compatible systems
+The original Arduino hardware was manufactured by the Italian company Smart Projects. Some Arduino-branded boards have been designed by the American companies SparkFun Electronics and Adafruit Industries.As of 2016, 17 versions of the Arduino hardware have been commercially produced.
+</br>
+<li>Arduino RS232(male pins): <br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Arduino316.jpg/259px-Arduino316.jpg">
+</br>
+<li>Arduino Diecimila:<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Arduino_Diecimila_6.jpg/240px-Arduino_Diecimila_6.jpg">
+</br>
+<li>Arduino Duemilanove(rev 2009b):<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Arduino_Duemilanove_2009b.jpg/240px-Arduino_Duemilanove_2009b.jpg">
+</br>
+<li>Arduino Uno R2:<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Arduino_Uno_-_R3.jpg/180px-Arduino_Uno_-_R3.jpg">
+<br>
+<li>Arduino Uno SMD R3:<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Arduino_Uno_-_R3.jpg/180px-Arduino_Uno_-_R3.jpg">
+</br>
+<li>Arduino Leonardo:<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Arduino_Leonardo.jpg/270px-Arduino_Leonardo.jpg">
+</br>
+<li>Arduino micro(AtMega 32U4):<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/2x3_pin_header_on_Arduino_Micro.jpg/240px-2x3_pin_header_on_Arduino_Micro.jpg">
+</br>
+<li>Arduino pro micro (AtMega32U4):<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Arduino_Pro_Micro.jpg/270px-Arduino_Pro_Micro.jpg">
+</br>
+<li>Arduino Pro(No USB):<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Arduino_Pro.jpg/180px-Arduino_Pro.jpg">
+</br>
+<li>Arduino Mega:<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Arduino_Mega.jpg/240px-Arduino_Mega.jpg">
+</br>
+<li>Arduino Nano(DIP-30 footprint):<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Arduino_Nano.jpg/77px-Arduino_Nano.jpg">
+</br>
+<li>Arduino LilyPad 00(rev 2007)(No USB):<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/LilyPad_Arduino_Main_Board.JPG/240px-LilyPad_Arduino_Main_Board.JPG">
+</br>
+<li>Arduino Robot:<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Arduino_Robot_Top.jpg/180px-Arduino_Robot_Top.jpg">
+<br>
+<li>Arduino Esplora:<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Arduino_Esplora.jpg/403px-Arduino_Esplora.jpg">
+</br>
+<li>Arduino Ethernet(AVR + W5100):<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Arduino_Ethernet_Board.jpg/270px-Arduino_Ethernet_Board.jpg">
+</br>
+<li>Arduino Yún(AVR + AR9331):<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/ArduinoYun.jpg/240px-ArduinoYun.jpg">
+</br>
+<li>Arduino Due(ARM Cortex-M3 core):<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/ArduinoDue_Front.jpg/338px-ArduinoDue_Front.jpg">
+</br>
+<li>Shields<br>
+Arduino</br> and Arduino-compatible boards use printed circuit expansion boards called shields, which plug into the normally supplied Arduino pin headers.[54] Shields can provide motor controls for 3D printing and other applications, GNSS (satellite navigation), Ethernet, liquid crystal display (LCD), or breadboarding (prototyping). Several shields can also be made do it yourself (DIY).
+<li>Some shields offer stacking headers which allows multiple shields to be stacked on top of an Arduino board. Here, a prototyping shield is stacked on two Adafruit motor shield V2s.<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Multiple_shields_stacked_on_an_Arduino_board.jpg/240px-Multiple_shields_stacked_on_an_Arduino_board.jpg">
+<br>
+<li>Screw-terminal breakout shield in a wing-type format, allowing bare-end wires to be connected to the board without requiring any specialized pins.,br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Wingshield_on_Arduino_-_ARSH-05-WI.jpg/270px-Wingshield_on_Arduino_-_ARSH-05-WI.jpg">
+</br>
+<li>Adafruit Datalogging Shield with a Secure Digital (SD) card slot and real-time clock (RTC) chip along with some space for adding components and modules for customization.<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/ARSH-09-DL_03.jpg/270px-ARSH-09-DL_03.jpg"><br>
+</br>
+<li>Adafruit Motor Shield with screw terminals for connection to motors. Officially discontinued, this shield may still be available through unofficial channels<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Adafruit_Motor_Shield_-_ARSH-02-MS_01.jpg/270px-Adafruit_Motor_Shield_-_ARSH-02-MS_01.jpg">
+</br>
+<li>The Adafruit motor shield V2 uses I2C, requiring vastly fewer digital I/O pins than attaching each motor directly.<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Front_of_the_motor_shield.jpg/135px-Front_of_the_motor_shield.jpg">
+</br>
+<li>A USB host shield which allows an Arduino board to communicate with a USB device such as a keyboard or a mouse.<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Closeup_of_usbhost_shield_with_jumper.JPG/240px-Closeup_of_usbhost_shield_with_jumper.JPG">
+</br>
+<li>Software<br>
+Arduino Software IDE
+Arduino IDE - Blink.png
+Screenshot of Arduino IDE showing Blink program
+Developer(s)	Arduino Software
+Stable release	
+1.8.16 / 6 September 2021; 6 months ago
+Written in	Java, C, C++
+Operating system	Windows, macOS, Linux
+Platform	IA-32, x86-64, ARM
+Type	Integrated development environment
+License	LGPL or GPL license
+Website	www.arduino.cc/en/Main/Software
+A program for Arduino hardware may be written in any programming language with compilers that produce binary machine code for the target processor. Atmel provides a development environment for their 8-bit AVR and 32-bit ARM Cortex-M based microcontrollers: AVR Studio (older) and Atmel Studio (newer).IDE
+The Arduino integrated development environment (IDE) is a cross-platform application (for Microsoft Windows, macOS, and Linux) that is written in the Java programming language. It originated from the IDE for the languages Processing and Wiring. It includes a code editor with features such as text cutting and pasting, searching and replacing text, automatic indenting, brace matching, and syntax highlighting, and provides simple one-click mechanisms to compile and upload programs to an Arduino board. It also contains a message area, a text console, a toolbar with buttons for common functions and a hierarchy of operation menus. The source code for the IDE is released under the GNU General Public License, version 2.
+The Arduino IDE supports the languages C and C++ using special rules of code structuring. The Arduino IDE supplies a software library from the Wiring project, which provides many common input and output procedures. User-written code only requires two basic functions, for starting the sketch and the main program loop, that are compiled and linked with a program stub main() into an executable cyclic executive program with the GNU toolchain, also included with the IDE distribution. The Arduino IDE employs the program avrdude to convert the executable code into a text file in hexadecimal encoding that is loaded into the Arduino board by a loader program in the board's firmware.
+From version 1.8.12, Arduino IDE windows compiler supports only Windows 7 or newer OS. On Windows Vista or older one gets "Unrecognized Win32 application" error when trying to verify/upload program. To run IDE on older machines, users can either use version 1.8.11, or copy "arduino-builder" executable from version 11 to their current install folder as its independet from IDE. IDE 2.0
+On October 18, 2019, Arduino Pro IDE (alpha preview) was released. Later, on March 1, 2021, the beta preview was released, renamed IDE 2.0. The system still uses Arduino CLI (Command Line Interface), but improvements include a more professional development environment, autocompletion support, and Git integration.[64] The application frontend is based on the Eclipse Theia Open Source IDE. The main features available in the new release are:
+<li>Modern, fully featured development environment</li>
+<li>Dual Mode, Classic Mode (identical to the Classic Arduino IDE) and Pro Mode (File System view)</li>
+<li>New Board Manager</li>
+<li>New Library Manager</li>
+<li>Board List</li>
+<li>Basic Auto-Completion (Arm targets only)</li>
+<li>GitSerial Monitor</li>
+<li>Serial Monitor</li>
+<li>Sketch<br>
+A sketch is a program written with the Arduino IDE.Sketches are saved on the development computer as text files with the file extension .ino. Arduino Software (IDE) pre-1.0 saved sketches with the extension .pde.
+A minimal Arduino C/C++ program consists of only two functions:
+setup(): This function is called once when a sketch starts after power-up or reset. It is used to initialize variables, input and output pin modes, and other libraries needed in the sketch. It is analogous to the function main().
+loop(): After setup() function exits (ends), the loop() function is executed repeatedly in the main program. It controls the board until the board is powered off or is reset. It is analogous to the function while(1).
+<li>Blink example<br>
+Power LED and Integrated LED on Arduino Compatible Board
+Power LED (red) and User LED (green) attached to pin 13 on an Arduino compatible board
+Most Arduino boards contain a light-emitting diode (LED) and a current limiting resistor connected between pin 13 and ground, which is a convenient feature for many tests and program functions. A typical program used by beginners, akin to Hello, World!, is "blink", which repeatedly blinks the on-board LED integrated into the Arduino board. This program uses the functions pinMode(), digitalWrite(), and delay(), which are provided by the internal libraries included in the IDE environment.This program is usually loaded into a new Arduino board by the manufacturer.
+<li># define LED_PIN 13<br>                  // Pin number attached to LED.
+
+void setup() <br>{<br>
+    pinMode(LED_PIN, OUTPUT);       // Configure pin 13 to be a digital output.
+<br>}<br>
+
+void loop() {<br>
+    digitalWrite(LED_PIN, HIGH);    // Turn on the LED.<br>
+    delay(1000);                    // Wait 1 second (1000 milliseconds).<br>
+    digitalWrite(LED_PIN, LOW);     // Turn off the LED.<br>
+    delay(1000);                    // Wait 1 second.<br>
+}
+<li>Libraries<br>
+The open-source nature of the Arduino project has facilitated the publication of many free software libraries that other developers use to augment their projects.
+
+<li>Operating systems/threading<br>
+There is a Xinu OS port for the atmega328p (Arduino Uno and others with the same chip), which includes most of the basic features.The source code of this version is freely available.
+There is also a threading tool, named Protothreads. Protothreads are described as "extremely lightweight stackless threads designed for severely memory constrained systems, such as small embedded systems or wireless sensor network nodes.
+<li>Applications<br>
+<li>Arduboy, a handheld game console based on Arduino</li>
+<li>Arduinome, a MIDI controller device that mimics the Monome</li>
+<li>Ardupilot, drone software and hardware</li>
+<li>ArduSat, a cubesat based on Arduino.</li>
+<li>C-STEM Studio, a platform for hands-on integrated learning of computing, science, technology, engineering, and mathematics (C-STEM) with robotics.</li>
+<li>Data loggers for scientific research.</li>
+<li>OBDuino, a trip computer that uses the on-board diagnostics interface found in most modern cars
+OpenEVSE an open-source electric vehicle charger</li>
+<li>XOD, a visual programming language for Arduino</li>
+<li>Tinkercad, an analog and digital simulator supporting Arduino Simulation</li>
+<li> Arduino-uno tree family: 
+<li><img src="https://i.imgur.com/yGRLPvL.jpeg" >
+<li><mark>Why arduino ?!</mark> <br>
+
+</p></li></ul>
+
+<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.makeblock.in.th%2Fen%2Fsoftware%2F&psig=AOvVaw3yxPlEoBojhlM5bCN2CKqF&ust=1649756244701000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCOiizZDbi_cCFQAAAAAdAAAAABAP" >
+
+<h3 id="Tinkercad">Tinkercad</h3>
+<img src="https://cdn.iste.org/www-root/Libraries/Images/Default%20Library/tinkercad-logo.png" width="200" height="200">
+<ul><li><p>Tinkercad is a free, easy-to-use app for 3D design, electronics, and coding. It's used by teachers, kids, hobbyists, and designers to imagine, design, and make anything! Users can quickly learn how to use the Tinkercad software through basic tutorial lessons that focus on the basics of the Tinkercad tool. Additional lessons help users create artistic objects of increasing complexity by tinkering with existing designs, as well as to work collaboratively to create new designs.</p></li>
+<iframe src="https://www.tinkercad.com/" width="1246" height="800">
+</frame>
+
+
+
+<h2 id="M-block">M-block:</h2>
+
+<ul>
+  <li><p>mBlock is a STEAM programming software tool designed for programming for kids. It is developed based on Scratch 3.0 and Arduino code.  It supports block-based and text-based programming languages.
+</li></p>
+
+<li><p>mBlock also provides software programming services, software design services and maintenance of computer software services in the education of programming for those who want to promote their programming abilities.
+With mBlock, children can not only create games and animations by dragging blocks or using Python code, but can also code robots or boards to do anything they can imagine. And mBlock exposes children to cutting-edge technologies, allowing children to create projects with technologies like AI and IoT. Moreover, in the mBlock Community, children are able to share projects and learn from the like-minded.
+</li></p>
+
+<li><p>1)Based on Scratch 3.0,start programming easily.
+Scratch is a programming tool developed by MIT and is credited as the most globally influential programming language for children. Based on Scratch 3.0 and Arduino code, mBlock is versatile and user-friendly enough to offer you whatever Scratch can give. And it is quite easy to pick up because you can code simply by dragging and dropping blocks.
+</li></p>
+
+<li><p>2)Go to Python with one-click.   
+With mBlock , users can easily switch to Python with one-click. After students grasp how to program with blocks, they can effortlessly move on to Python. You donot have to switch between software because mBlock allows you to write code directly in its Python editor. The transition is just seamless.
+</li></p>
+
+<li><p>3)A mix of software and robots makes it fun to learn coding.
+mBlock  allows users to program robots to do anything they can imagine. By showing the outcomes of coding in the physical world, we attempt to keep students engaged in learning code and bring them senses of fulfillment. Also, mBlock brings diversity into classrooms because it has the power that enables educators and students to turn different ideas into reality.
+</li></p>
+
+<li><p>4)Give your creativity an edge with cutting-edge technologies, like AI .
+mBlock  integrates Microsoft cognitive services and Google deep learning into one tool. With these features, children can program to add more capabilities to mBlock , like age guessing or playing rock-paper-scissors games. We just hope to make it easier for children to master the fundamentals of AI.
+</li></p>
+
+<li><p>5)Create in a physical world with IoT applications.
+mBlock comes with the cloud service that is designed for IoT teaching. By working with robots or electronic modules, you can take advantage of the feature to create fun projects, like Weather Report, Autonomous Plant Watering Robot and Smart Lighting. For students, the best way to learn about IoT is to see how it works in real life.
+</li></p>
+</ul>
+<strong><p>This is the mblock ide have a great experiance.&#128512 &#128521</p></strong>
+<iframe src="https://ide.mblock.cc/"   width="1246" height="800">
+</iframe>
+
+<h4 id="Zodiac sign">Zodiac sign:</h4>
+<body>
+<p class="round3"style="font-size:55px;color:green">
+<ins>FM ZODIAC Sign:</ins><br>&#9800:This is the Sign of Aries,الحمل</br>
+<br>&#9801:This is the Sign of Taurus,الثور</br>
+<br>&#9802:This is the Sign of Gemini,الجوزاء</br>
+<br>&#9803:This is the Sign of Cancer,السرطان</br>
+<br>&#9804:This is the Sign of Leo,الاسد</br>
+<br>&#9805:This is the Sign of Vigro,Minim,العذراء</br>
+<br>&#9806:This is the Sign of Libra,الميزان</br>
+<br>&#9807:This is the Sign of Scorpius,Scorpio,العقرب</br>
+<br>&#9808:This is the Sign of Sagittarius,القوس</br>
+<br>&#9809:This is the Sign of Capricorn,الجدي</br>
+<br>&#9810:This is the Sign of Aquarius,الدلو</br>
+<br>&#9811This is the Sign of Pisces,الحوت</br>
+</body>
+
+<h4 id="GOOGLE-AUTO_DRAW">GOOGLE-AUTO-DRAW: <br> you can draw what you want & goohle-draw will convert it into a perfect draw,you also can download it have fun.</br></h4>
+<iframe src="https://www.autodraw.com/" width="1246" height="800">
+</iframe>
+
+<h5 id="GOOOOGLE-HACKES">GOOOOGLE-HACKES</h5>
+<iframe src="https://elgoog.im/" width="1246" height="800">
+</iframe>
+
+<h1 id="Coptic-Language">Coptic Languge:</h1>
+<h3>All the coptic letters</h3>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+​<table style="width:100%">
+  <colgroup>
+  <col span="3" style="background-color: #D6EEEE">
+</colgroup>
+  <tr>
+    <th style="font-size:300%;"  > شكل الحرف</th>
+    <th style="font-size:300%; "> اسم الحرف</th>
+    <th style="font-size:300%; " >نطق الحرف</th>
+  </tr>
+  <tr>
+    <td style="font-size:300%;" >  <span style='font-size:100px;'> &#11392;
+</span> </td>
+    <td style="font-size:300%;" > Alfa-الفا  </td>
+    <td  style="font-size:300%;"  >الف </td>
+  </tr>
+
+  <tr>
+    <td  style="font-size:300%;" >  <span style='font-size:100px;'> &#11394;
+</span></td>
+
+    <td style="font-size:300%;" > beta-بيتا</td>
+   <td style="font-size:300%;" > ف- ب </td>
+   </tr>
+<tr>
+ <td  style="font-size:300%;" >  <span style='font-size:100px;'> &#11396;
+</span></td>
+
+    <td style="font-size:300%;" > gamma-غامه</td>
+   <td style="font-size:300%;" > غ-ج-ن  </td>
+</tr>
+
+<tr>
+ <td  style="font-size:300%;" >  <span style='font-size:100px;'> &#11399;
+</span></td>
+
+    <td style="font-size:300%;" > delta-دلتا</td>
+   <td style="font-size:300%;" >ذ -د </td>
+</tr>
+
+<tr>
+ <td  style="font-size:300%;" >  <span style='font-size:100px;'> &#11400;
+</span></td>
+
+    <td style="font-size:300%;" > ehh-اي</td>
+   <td style="font-size:300%;" > ي</td>
+</tr>
+
+<tr>
+ <td  style="font-size:300%;" >  <span style='font-size:100px;'> &#11402;
+</span></td>
+
+    <td style="font-size:300%;" > سوأو</td>
+   <td style="font-size:300%;" > رقم6</td>
+</tr>
+
+<tr>
+ <td  style="font-size:300%;" >  <span style='font-size:100px;'> &#11404;
+</span></td>
+
+    <td style="font-size:300%;" > زيتا</td>
+   <td style="font-size:300%;" > ز</td>
+</tr>
+
+<tr>
+ <td  style="font-size:300%;" >  <span style='font-size:100px;'> &#11406;
+</span></td>
+
+    <td style="font-size:300%;" > ايتا</td>
+   <td style="font-size:300%;" > ي</td>
+</tr>
+
+<tr>
+ <td  style="font-size:300%;" >  <span style='font-size:100px;'> &#11408;
+</span></td>
+
+    <td style="font-size:300%;" > ثيتا</td>
+   <td style="font-size:300%;" > ث-ت</td>
+</tr>
+
+<tr>
+ <td  style="font-size:300%;" >  <span style='font-size:100px;'> &#11410;
+</span></td>
+
+    <td style="font-size:300%;" > يوطا</td>
+   <td style="font-size:300%;" > ي</td>
+</tr>
+
+<tr>
+ <td  style="font-size:300%;" >  <span style='font-size:100px;'> &#11412;
+</span></td>
+
+    <td style="font-size:300%;" > كبا</td>
+   <td style="font-size:300%;" > ك</td>
+</tr>
+
+<tr>
+ <td  style="font-size:300%;" >  <span style='font-size:100px;'> &#11414;
+</span></td>
+
+    <td style="font-size:300%;" > لولا</td>
+   <td style="font-size:300%;" > ل</td>
+</tr>
+
+<tr>
+ <td  style="font-size:300%;" >  <span style='font-size:100px;'> &#11416;
+</span></td>
+
+    <td style="font-size:300%;" > مي</td>
+   <td style="font-size:300%;" > م</td>
+</tr>
+
+
+<tr>
+ <td  style="font-size:300%;" >  <span style='font-size:100px;'> &#11418;
+</span></td>
+
+    <td style="font-size:300%;" > ني</td>
+   <td style="font-size:300%;" > ن</td>
+</tr>
+
+<tr>
+ <td  style="font-size:300%;" >  <span style='font-size:100px;'> &#11420;
+</span></td>
+
+    <td style="font-size:300%;" > اكسي</td>
+   <td style="font-size:300%;" > اكس-X</td>
+</tr>
+
+<tr>
+ <td  style="font-size:300%;" >  <span style='font-size:100px;'> &#11422;
+</span></td>
+
+    <td style="font-size:300%;" > اوميكرون</td>
+   <td style="font-size:300%;" > و</td>
+</tr>
+
+<tr>
+ <td  style="font-size:300%;" >  <span style='font-size:100px;'> &#11424;
+</span></td>
+
+    <td style="font-size:300%;" > بي</td>
+   <td style="font-size:300%;" > ب</td>
+</tr>
+
+<tr>
+ <td  style="font-size:300%;" >  <span style='font-size:100px;'> &#11426;
+</span></td>
+
+    <td style="font-size:300%;" > رو</td>
+   <td style="font-size:300%;" > ر</td>
+</tr>
+
+<tr>
+ <td  style="font-size:300%;" >  <span style='font-size:100px;'> &#11428;
+</span></td>
+
+    <td style="font-size:300%;" > سيما</td>
+   <td style="font-size:300%;" > س</td>
+</tr>
+
+<tr>
+ <td  style="font-size:300%;" >  <span style='font-size:100px;'> &#11430;
+</span></td>
+
+    <td style="font-size:300%;" > تاڤ</td>
+   <td style="font-size:300%;" > ت-د</td>
+</tr>
+
+<tr>
+ <td  style="font-size:300%;" >  <span style='font-size:100px;'> &#11430;
+</span></td>
+
+    <td style="font-size:300%;" > ابسلن</td>
+   <td style="font-size:300%;" > ي-ف-و</td>
+</tr>
+
+<tr>
+ <td  style="font-size:300%;" >  <span style='font-size:100px;'> &#11434;
+</span></td>
+    <td style="font-size:300%;" > في</td>
+   <td style="font-size:300%;" > ف</td>
+</tr>
+
+
+<tr>
+ <td  style="font-size:300%;" >  <span style='font-size:100px;'> &#935;
+</span></td>
+    <td style="font-size:300%;" > كي</td>
+   <td style="font-size:300%;" > ك-ش-خ</td>
+</tr>
+
+<tr>
+ <td  style="font-size:300%;" >  <span style='font-size:100px;'> &#936;
+</span></td>
+    <td style="font-size:300%;" > ابسي</td>
+   <td style="font-size:300%;" > بس</td>
+</tr>
+
+<tr>
+ <td  style="font-size:300%;" >  <span style='font-size:100px;'> &#11440;
+</span></td>
+    <td style="font-size:300%;" > اوميجا</td>
+   <td style="font-size:300%;" > وو</td>
+</tr>
+
+<tr>
+ <td  style="font-size:300%;" >  <span style='font-size:100px;'> &#994;
+</span></td>
+    <td style="font-size:300%;" > شاي</td>
+   <td style="font-size:300%;" > ش</td>
+</tr>
+
+
+<tr>
+ <td  style="font-size:300%;" >  <span style='font-size:100px;'> &#997;
+</span></td>
+    <td style="font-size:300%;" > فاي</td>
+   <td style="font-size:300%;" > ف</td>
+</tr>
+
+<tr>
+ <td  style="font-size:300%;" >  <span style='font-size:100px;'> &#999;
+</span></td>
+    <td style="font-size:300%;" > خاي</td>
+   <td style="font-size:300%;" > خ</td>
+</tr>
+
+<tr>
+ <td  style="font-size:300%;" >  <span style='font-size:100px;'> &#11559;</span></td>
+    <td style="font-size:300%;" > هوري</td>
+   <td style="font-size:300%;" > ه‍</td>
+</tr>
+
+
+<tr>
+ <td  style="font-size:300%;" >  <span style='font-size:100px;'> &#1002;
+</span></td>
+    <td style="font-size:300%;" > چنچا</td>
+   <td style="font-size:300%;" >ج</td>
+</tr>
+
+<tr>
+ <td  style="font-size:300%;" >  <span style='font-size:100px;'> &#1004;
+</span></td>
+    <td style="font-size:300%;" > تشيما</td>
+   <td style="font-size:300%;" > تش</td>
+</tr>
+
+<tr>
+ <td  style="font-size:300%;" >  <span style='font-size:100px;'> &#11541;
+</span></td>
+    <td style="font-size:300%;" > تي</td>
+   <td style="font-size:300%;" > ت</td>
+</tr>
+</table>
+</body>
+
+<ins><p style="text-align:center;">Copy right 2022 &#169 </p></ins></style>
+</body>
+</html>
